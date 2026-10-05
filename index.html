@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>康家滩欣院 · 晋商大院与黄河村史</title>
+<meta name="description" content="山西保德康家滩欣院：清代晋商康氏走口外经营甘草发家后所建，中原文化与大漠文化交融的青砖大院；抗战时期八路军一二〇师二旅司令部旧址。三维云游、九组盛景复原、原照档案与方志史料。">
+<meta name="keywords" content="康家滩欣院,欣院,保德,晋商,走西口,走口外,甘草,一二〇师二旅司令部旧址,晋西北大院,砖雕,三维复原">
+<meta name="theme-color" content="#14110d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="康家滩欣院 · 晋商大院与黄河村史">
+<meta property="og:description" content="走口外的晋商院落，中原与大漠的交响。三维云游、盛景复原与可追溯出处的史料。">
+<meta property="og:image" content="assets/img/hero-courtyard-sm.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='3' y='3' width='58' height='58' rx='8' fill='%23a8382a'/%3E%3Crect x='8' y='8' width='48' height='48' rx='4' fill='none' stroke='%23f6ead6' stroke-width='2.5'/%3E%3Ctext x='32' y='44' font-size='32' text-anchor='middle' fill='%23f6ead6' font-family='serif' font-weight='700'%3E%E6%AC%A3%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="preload" as="image" href="assets/img/hero-courtyard.jpg">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "./assets/vendor/three/three.module.min.js",
+  "three/addons/": "./assets/vendor/three/addons/"
+} }
+</script>
+</head>
+<body>
+<a class="skip" href="#yuanshi">跳到正文</a>
+
+<!-- ============ 图形符号 ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="pat-parapet" width="56" height="34" patternUnits="userSpaceOnUse">
+      <rect width="56" height="34" fill="currentColor" opacity=".0"/>
+      <path d="M10 3h8v5h5v8h-5v5h-8v-5H5V8h5z M38 20h8v5h5v8h-5v1h-8v-1h-5v-8h5z" fill="currentColor"/>
+    </pattern>
+    <pattern id="pat-fret" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M2 22V2h20v16H8V8h8v6" fill="none" stroke="currentColor" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <!-- 暗八仙 -->
+  <symbol id="m-shan" viewBox="0 0 64 64"><path d="M32 7c13 3 21 16 18 31-2 9-9 14-18 16-9-2-16-7-18-16C11 23 19 10 32 7z"/><path d="M32 54V13M32 28l-9-9M32 28l9-9M32 38l-12-7M32 38l12-7M32 47l-13-5M32 47l13-5"/><path d="M32 54v6"/><circle cx="32" cy="60" r="1.6"/></symbol>
+  <symbol id="m-jian" viewBox="0 0 64 64"><path d="M32 5l3.5 7v31h-7V12z"/><path d="M32 12v30"/><path d="M23 44h18"/><path d="M32 45v9"/><circle cx="32" cy="56" r="2.2"/><path d="M32 58c-2 2-4 3-6 5M32 58c2 2 4 3 6 5"/></symbol>
+  <symbol id="m-hulu" viewBox="0 0 64 64"><circle cx="32" cy="21" r="7.5"/><path d="M27 27c-8 3-13 9-13 16 0 8 8 14 18 14s18-6 18-14c0-7-5-13-13-16"/><path d="M32 13.5V8M32 9c3-3 7-3 9-1-3 2-6 2-9 1"/><path d="M25 29c5 2 9 2 14 0M30 30l-4 8M34 30l4 8"/></symbol>
+  <symbol id="m-paiban" viewBox="0 0 64 64"><rect x="26" y="12" width="12" height="44" rx="2"/><rect x="26" y="12" width="12" height="44" rx="2" transform="rotate(-16 32 12)"/><rect x="26" y="12" width="12" height="44" rx="2" transform="rotate(16 32 12)"/><path d="M28 8c2-3 6-3 8 0"/></symbol>
+  <symbol id="m-hualan" viewBox="0 0 64 64"><path d="M15 35h34l-5 20H20z"/><path d="M17 42h30M19 49h26M25 35l2 20M32 35v20M39 35l-2 20"/><path d="M18 35c0-20 28-20 28 0"/><circle cx="25" cy="31" r="4"/><circle cx="32" cy="27" r="4.5"/><circle cx="39" cy="31" r="4"/></symbol>
+  <symbol id="m-yugu" viewBox="0 0 64 64"><ellipse cx="32" cy="13" rx="9" ry="3.2"/><path d="M23 13v38c0 2 4 3.5 9 3.5s9-1.5 9-3.5V13"/><path d="M23 20h18M23 46h18"/><path d="M11 56l9-34M53 56l-9-34"/></symbol>
+  <symbol id="m-di" viewBox="0 0 64 64"><path d="M10 49l39-39 4 4-39 39z"/><circle cx="22" cy="43" r="1.4"/><circle cx="27" cy="38" r="1.4"/><circle cx="32" cy="33" r="1.4"/><circle cx="37" cy="28" r="1.4"/><circle cx="42" cy="23" r="1.4"/><path d="M12 51c-2 4-2 7 0 10M12 51c-4 2-6 5-6 9"/></symbol>
+  <symbol id="m-hehua" viewBox="0 0 64 64"><path d="M32 10c7 9 7 22 0 30-7-8-7-21 0-30z"/><path d="M32 40c-10-1-17-8-18-18 8 1 14 7 18 18zM32 40c10-1 17-8 18-18-8 1-14 7-18 18z"/><path d="M32 40c0 8-2 14-5 20"/><path d="M30 52c-6-3-13-1-16 4 6 2 12 1 16-4z"/></symbol>
+  <!-- 琴棋书画 -->
+  <symbol id="m-qin" viewBox="0 0 64 64"><rect x="6" y="25" width="52" height="14" rx="5"/><path d="M12 29h40M12 32h40M12 35h40"/><circle cx="18" cy="23" r="1"/><circle cx="26" cy="23" r="1"/><circle cx="34" cy="23" r="1"/><circle cx="42" cy="23" r="1"/><path d="M54 39v6M10 39v6"/></symbol>
+  <symbol id="m-qi" viewBox="0 0 64 64"><rect x="10" y="10" width="44" height="44" rx="2"/><path d="M21 10v44M32 10v44M43 10v44M10 21h44M10 32h44M10 43h44"/><circle cx="21" cy="21" r="4" class="fill"/><circle cx="32" cy="32" r="4"/><circle cx="43" cy="32" r="4" class="fill"/><circle cx="32" cy="43" r="4"/></symbol>
+  <symbol id="m-shu" viewBox="0 0 64 64"><path d="M12 22h40v10H12zM10 32h44v12H10zM14 44h36v10H14z"/><path d="M17 22v10M15 32v12M19 44v10"/><path d="M22 27h20M20 38h26"/></symbol>
+  <symbol id="m-hua" viewBox="0 0 64 64"><path d="M14 9h36M16 9v2h32V9"/><rect x="18" y="11" width="28" height="40"/><path d="M14 53h36"/><circle cx="14" cy="53" r="2"/><circle cx="50" cy="53" r="2"/><path d="M21 41l8-12 5 7 4-5 6 10M32 4l-4 5M32 4l4 5"/><circle cx="38" cy="19" r="3"/></symbol>
+  <!-- 蒙古族常见纹样 -->
+  <symbol id="m-jiwen" viewBox="0 0 64 64"><path d="M32 54c0-14-6-22-14-22-6 0-9 5-7 10 2 4 8 4 9 0 1-3-2-5-4-3"/><path d="M32 54c0-14 6-22 14-22 6 0 9 5 7 10-2 4-8 4-9 0-1-3 2-5 4-3"/><path d="M32 30c0-8-4-14-10-16M32 30c0-8 4-14 10-16M32 12v18"/></symbol>
+  <symbol id="m-panchang" viewBox="0 0 64 64"><path d="M17 27l20 20M22 22l20 20M27 17l20 20M47 27L27 47M42 22L22 42M37 17L17 37"/><path d="M27 17c0-6 10-6 10 0M47 27c6 0 6 10 0 10M37 47c0 6-10 6-10 0M17 37c-6 0-6-10 0-10"/><path d="M22 22c-4-4 1-9 5-5M42 22c4-4 9 1 5 5M42 42c4 4-1 9-5 5M22 42c-4 4-9-1-5-5"/></symbol>
+  <symbol id="m-hamur" viewBox="0 0 64 64"><path d="M32 50c-9 0-17-6-17-15 0-7 6-11 11-9 4 2 4 7 1 8-2 1-4-1-3-3"/><path d="M32 50c9 0 17-6 17-15 0-7-6-11-11-9-4 2-4 7-1 8 2 1 4-1 3-3"/><path d="M32 50V24c0-6 4-10 8-11M32 24c0-6-4-10-8-11"/></symbol>
+  <symbol id="m-yunwen" viewBox="0 0 64 64"><path d="M10 40c-4-8 4-15 11-11 1-9 13-12 18-4 7-4 16 3 12 11"/><path d="M10 40h41"/><path d="M21 29c2 3 1 6-2 7M39 25c-3 2-4 6-2 9"/><path d="M18 48c4 0 6-3 6-6M44 48c-4 0-6-3-6-6"/></symbol>
+  <!-- 印章 -->
+  <symbol id="seal" viewBox="0 0 64 64"><rect x="2" y="2" width="60" height="60" rx="6" fill="#a8382a"/><rect x="7" y="7" width="50" height="50" rx="3" fill="none" stroke="#f6ead6" stroke-width="2.2"/><text x="32" y="30" font-size="21" text-anchor="middle" fill="#f6ead6" font-family="'Xinyuan Brush','STKaiti','KaiTi',serif">欣</text><text x="32" y="51" font-size="21" text-anchor="middle" fill="#f6ead6" font-family="'Xinyuan Brush','STKaiti','KaiTi',serif">院</text></symbol>
+</svg>
+
+<!-- ============ 导航 ============ -->
+<header class="nav" data-nav>
+  <a class="nav__brand" href="#top" aria-label="康家滩欣院 · 返回顶部">
+    <svg class="nav__seal" aria-hidden="true"><use href="#seal"/></svg>
+    <span class="nav__name">康家滩欣院<small>KANGJIATAN XINYUAN</small></span>
+  </a>
+  <nav class="nav__links" aria-label="主要栏目">
+    <a href="#yuanshi">院史</a><a href="#jinshang">晋商</a><a href="#yingzao">营造</a><a href="#yunyou">云游</a><a href="#shengjing">盛景</a><a href="#jiaxun">家训</a><a href="#gudu">古渡</a><a href="#fenghuo">烽火</a><a href="#canfang">参访</a>
+  </nav>
+  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn><span></span><span></span><em>目录</em></button>
+</header>
+<div class="menu" id="menu" hidden data-menu>
+  <ol>
+    <li><a href="#yuanshi"><b>壹</b>院史</a></li><li><a href="#jinshang"><b>贰</b>晋商 · 走口外</a></li><li><a href="#yingzao"><b>叁</b>营造</a></li><li><a href="#yunyou"><b>肆</b>云游三维</a></li><li><a href="#shengjing"><b>伍</b>盛景复原</a></li><li><a href="#jiaxun"><b>陆</b>家训</a></li><li><a href="#gudu"><b>柒</b>黄河古渡</a></li><li><a href="#fenghuo"><b>捌</b>烽火岁月</a></li><li><a href="#nianbiao"><b>玖</b>年表</a></li><li><a href="#dangan"><b>拾</b>原照档案</a></li><li><a href="#canfang"><b>拾壹</b>参访</a></li><li><a href="#shiliao"><b>拾贰</b>史料与说明</a></li>
+  </ol>
+</div>
+
+<main>
+<!-- ============ 首屏 ============ -->
+<section class="hero" id="top">
+  <picture class="hero__bg">
+    <source media="(max-width: 700px)" srcset="assets/img/hero-courtyard-sm.jpg">
+    <img src="assets/img/hero-courtyard.jpg" alt="康家滩欣院前院盛景推定图：三开间花格主房与两侧厢房，青砖铺地，晨光斜照" fetchpriority="high">
+  </picture>
+  <div class="hero__shade"></div>
+  <div class="hero__inner">
+    <div class="hero__title">
+      <h1>康家滩欣院</h1>
+      <p class="hero__vert">晋商走口外&nbsp;·&nbsp;甘草起家业</p>
+      <svg class="hero__seal" aria-hidden="true"><use href="#seal"/></svg>
+    </div>
+    <div class="hero__copy">
+      <p class="kicker kicker--light">山西 · 忻州 · 保德县东关镇康家滩村</p>
+      <p class="hero__lede">清代中期，保德康氏远走口外，以甘草生意发家，归乡营建青砖大院。砖雕里有汉风，也有蒙韵；照壁上刻着“治家要术不外勤而俭，处世良谋唯在谦而和”。抗战年间，这里又成了八路军一二〇师二旅的司令部。</p>
+      <div class="hero__cta">
+        <a class="btn btn--gold" href="#yunyou">云游三维院落</a>
+        <a class="btn btn--ghost" href="#shengjing">看九组盛景复原</a>
+      </div>
+      <ul class="hero__badges">
+        <li><b>2002</b>县级文物保护单位</li>
+        <li><b>2022</b>一二〇师二旅司令部旧址 · 市级文物保护单位</li>
+      </ul>
+    </div>
+  </div>
+  <p class="hero__cap">图：前院盛景推定（依据现状原照生成的视觉复原，非实测）</p>
+  <a class="hero__scroll" href="#yuanshi" aria-label="向下浏览"><span>入院</span></a>
+</section>
+
+<!-- ============ 壹 院史 ============ -->
+<section class="sec sec--paper" id="yuanshi">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-no">壹</span>
+      <p class="kicker">院史 · HISTORY</p>
+      <h2>一座院，半部晋商史</h2>
+    </header>
+    <div class="intro">
+      <div class="intro__text reveal">
+        <p class="dropcap">康家滩欣院位于山西省忻州市保德县东关镇康家滩村，地处晋陕峡谷黄河东岸、旧保德州城东侧。据地方文史资料《保德名胜》记载，清代中期“走口外”之风盛行，村中康氏远赴口外掏甘草、做生意，发迹后返乡，用口外挣来的银钱修起了这座院落群。“欣院”是当地对这座康家大院的俗称。</p>
+        <p>院子被视为“中原文化与大漠文化典型的结合体”：砖雕的题材与刀法，既有汉族风格，也有蒙古族风格，专家誉之为民族交融的典范、晋西北大院文化的代表。院内的对联与砖雕，在特殊年代被村民用泥包裹起来，因而得以保存。</p>
+        <p>现场文物说明牌记载：院落<strong>座西向东，占地面积982平方米</strong>，由南北两座形制相同的四合院组成。1941年，八路军一二〇师二旅兼晋绥军区第二军分区由河曲迁驻保德，司令部即设在这里。2002年8月，保德县人民政府公布其为县级文物保护单位。</p>
+      </div>
+      <figure class="intro__fig reveal">
+        <button class="zoom" type="button" data-lightbox-photo="477" aria-label="放大查看现场文物说明牌原照">
+          <img src="assets/img/photos/477-sm.jpg" alt="院墙上的《一二〇师二旅司令部旧址简介》文物说明牌" loading="lazy" width="520" height="234">
+        </button>
+        <figcaption>现场文物说明牌《一二〇师二旅司令部旧址简介》，保德县文物保护所立（原照477）</figcaption>
+      </figure>
+    </div>
+    <ul class="facts">
+      <li class="reveal"><b>清代中期</b><span>康氏走口外经营甘草，发家后返乡修建</span><i>据《保德名胜》</i></li>
+      <li class="reveal"><b>982<small>㎡</small></b><span>占地面积；座西向东，南北两院同为四合院</span><i>据现场说明牌</i></li>
+      <li class="reveal"><b>1941</b><span>一二〇师二旅司令部由河曲迁驻康家滩</span><i>据说明牌、《忻州日报》</i></li>
+      <li class="reveal"><b>2002</b><span>公布为县级文物保护单位；2022年旧址列入忻州市第三批市级文保</span><i>据忻政函〔2022〕33号</i></li>
+    </ul>
+  </div>
+</section>
+
+<div class="parapet" aria-hidden="true"><svg width="100%" height="34"><rect width="100%" height="34" fill="url(#pat-parapet)"/></svg></div>
+
+<!-- ============ 贰 晋商 ============ -->
+<section class="sec sec--ink" id="jinshang">
+  <div class="wrap">
+    <header class="sec-head sec-head--light reveal">
+      <span class="sec-no">贰</span>
+      <p class="kicker">晋商 · ZOU KOUWAI</p>
+      <h2>走口外：一株甘草的商路</h2>
+      <p class="sec-head__quote">河曲保德州，十年九不收；<br>男人走口外，女人挖野菜。<span>—— 晋西北民谣</span></p>
+    </header>
+    <div class="trade">
+      <div class="trade__text reveal">
+        <p>保德地处晋陕蒙交界的黄河岸边，土地瘠薄、十年九旱。明清以来，一代代保德人渡过黄河、越过长城，到口外的草原上垦荒、放牧、经商，史称“走西口”，当地人习惯叫“走口外”。</p>
+        <p>口外的鄂尔多斯高原沙地广布，是著名的甘草产区。甘草根深耐旱，挖掘、晾晒、打捆之后，再经驼道与水路转运内地药市。据《保德名胜》记载，欣院的主人正是清代“走口外掏甘草做生意发了迹”的典型代表。</p>
+        <p>走口外的晋商，多把在外积攒的银钱带回故土，修宅置地。欣院一砖一瓦里，藏着的正是这份闯荡与归乡。</p>
+      </div>
+      <figure class="map reveal" data-map>
+        <svg viewBox="0 0 840 600" role="img" aria-labelledby="map-t map-d">
+          <title id="map-t">走口外路线示意图</title>
+          <desc id="map-d">示意保德康家滩渡黄河经府谷北上，至鄂尔多斯高原甘草产区与包头、归化城一带，并将甘草返运内地的方向。</desc>
+          <defs>
+            <linearGradient id="g-river" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c79b5e"/><stop offset="1" stop-color="#a87c45"/></linearGradient>
+            <radialGradient id="g-desert" cx=".38" cy=".52" r=".42"><stop offset="0" stop-color="#d7b27a" stop-opacity=".22"/><stop offset="1" stop-color="#d7b27a" stop-opacity="0"/></radialGradient>
+            <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#dcbf8c"/></marker>
+          </defs>
+          <rect width="840" height="600" fill="none"/>
+          <g class="map__grid" stroke="rgba(239,229,211,.06)">
+            <path d="M0 100H840M0 200H840M0 300H840M0 400H840M0 500H840M140 0V600M280 0V600M420 0V600M560 0V600M700 0V600"/>
+          </g>
+          <ellipse cx="300" cy="320" rx="300" ry="190" fill="url(#g-desert)"/>
+          <text class="map__region" x="250" y="388">鄂尔多斯高原</text>
+          <text class="map__region map__region--s" x="120" y="62">河套</text>
+          <text class="map__prov" x="470" y="40">内 蒙 古</text>
+          <text class="map__prov" x="690" y="470">山 西</text>
+          <text class="map__prov" x="380" y="572">陕 西</text>
+          <!-- 长城（示意） -->
+          <path class="map__wall" d="M617 372C660 320 700 250 759 200S815 165 836 160"/>
+          <path class="map__wall" d="M548 445C525 458 500 470 462 480S360 520 300 560"/>
+          <text class="map__wall-t" x="690" y="300" transform="rotate(-48 690 300)">明长城（示意）</text>
+          <!-- 黄河 -->
+          <path class="map__river" d="M20 100C60 92 95 86 127 90S200 128 234 136S320 148 363 150S440 154 464 160S520 184 540 196S566 206 571 210S590 250 594 270S583 300 578 310S566 340 563 350S562 372 562 380S552 408 548 420S554 444 556 454S540 494 533 510S520 560 517 600"/>
+          <text class="map__river-t" x="612" y="292">黄 河</text>
+          <!-- 路线 -->
+          <path id="route-back" class="map__route map__route--back" d="M193 300C250 304 320 306 384 306C440 316 492 344 512 380C528 410 540 440 558 462C600 520 700 548 806 566" marker-end="url(#arrow)"/>
+          <path id="route-out" class="map__route" d="M558 456C553 452 548 450 545 446C530 420 520 396 506 372C490 346 450 316 420 306C405 300 394 298 384 298C320 294 250 292 193 294"/>
+          <path id="route-bt" class="map__route" d="M384 298C378 250 370 190 363 128"/>
+          <g class="map__caravan" data-caravan><circle r="13" fill="#14110d" stroke="#dcbf8c" stroke-width="1.5"/><path d="M-7 4h3l1-5 3-2 3 2 2-3 2 1-1 3v4h2M-6 4v4M6 4v4" fill="none" stroke="#dcbf8c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+          <!-- 地点 -->
+          <g class="map__places">
+            <g class="map__home"><circle cx="558" cy="456" r="8"/><circle cx="558" cy="456" r="15" class="pulse"/></g>
+            <text x="572" y="462" class="map__home-t">保德 · 康家滩</text>
+            <circle cx="545" cy="446" r="3.5"/><text x="534" y="440" class="t-r">府谷</text>
+            <circle cx="562" cy="384" r="3.5"/><text x="550" y="388" class="t-r">河曲 · 西口古渡</text>
+            <circle cx="617" cy="372" r="3.5"/><text x="627" y="376">偏关</text>
+            <circle cx="577" cy="288" r="3.5"/><text x="566" y="292" class="t-r">准格尔</text>
+            <circle cx="569" cy="206" r="3.5"/><text x="557" y="200" class="t-r">河口</text>
+            <circle cx="363" cy="128" r="4.5"/><text x="373" y="120">包头</text>
+            <circle cx="643" cy="96" r="4.5"/><text x="653" y="100">归化城</text>
+            <circle cx="384" cy="298" r="3.5"/><text x="392" y="290">东胜</text>
+            <circle cx="759" cy="200" r="3.5"/><text x="742" y="190" class="t-r">杀虎口</text>
+            <circle cx="462" cy="492" r="3.5"/><text x="472" y="500">神木</text>
+          </g>
+          <g class="map__gancao" transform="translate(193 294)">
+            <circle r="6" fill="#dcbf8c"/>
+            <path d="M0 -8C-4 -22 -14 -26 -22 -24M0 -8C3 -20 12 -26 20 -28M-10 -20c-4-1-8 1-9 4M10 -21c3-3 8-3 10 0" fill="none" stroke="#9fb27a" stroke-width="2" stroke-linecap="round"/>
+            <text x="-6" y="28" class="map__gc-t">杭锦一带 · 梁外甘草</text>
+          </g>
+          <text x="740" y="590" class="map__to">运销内地药市 →</text>
+          <g class="map__legend" transform="translate(24 470)">
+            <path d="M0 8h34" class="map__route"/><text x="44" y="12">走口外（示意）</text>
+            <path d="M0 34h34" class="map__route map__route--back"/><text x="44" y="38">甘草返运（示意）</text>
+            <path d="M0 60h34" class="map__wall"/><text x="44" y="64">明长城（示意）</text>
+            <text x="0" y="96" class="map__note">示意图：地名位置约略、非比例，不代表康氏实际行程</text>
+          </g>
+        </svg>
+      </figure>
+    </div>
+    <ul class="cards3">
+      <li class="reveal"><span class="cards3__k">国老</span><h3>一味甘草</h3><p>甘草味甘、性平，善于调和诸药，被古人誉为“国老”。口外的甘草，是晋商药材贸易里的重要货品。</p></li>
+      <li class="reveal"><span class="cards3__k">梁外</span><h3>口外产区</h3><p>鄂尔多斯高原的沙地草原盛产甘草，杭锦一带出产的“梁外甘草”尤负盛名。</p></li>
+      <li class="reveal"><span class="cards3__k">归乡</span><h3>银钱化院</h3><p>在口外挣下的银钱，最终化作黄河岸边的青砖大院——欣院正是这份闯荡与归乡的见证。</p></li>
+    </ul>
+    <blockquote class="pull reveal"><p>甘草调和百药，<br>欣院融汇两种文明。</p></blockquote>
+  </div>
+</section>
+
+<!-- ============ 叁 营造 ============ -->
+<section class="sec sec--paper2" id="yingzao">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-no">叁</span>
+      <p class="kicker">营造 · ARCHITECTURE</p>
+      <h2>一座四合院的构成</h2>
+      <p class="lede">据现场说明牌，欣院由南北两座形制相同的四合院组成（《保德名胜》称“前后两院”）。下图根据现状原照建立的研究模型，示意其中一院的构成。点选部位查看说明；位置与尺寸均未经实测。</p>
+    </header>
+    <div class="plan" data-plan>
+      <figure class="plan__fig reveal">
+        <svg viewBox="-122 -150 292 378" role="img" aria-labelledby="plan-t">
+          <title id="plan-t">欣院一院平面示意（研究模型，非测绘）</title>
+          <defs>
+            <pattern id="pat-roof" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(90)"><path d="M0 2.5h5" stroke="#6d6255" stroke-width="1.2" opacity=".55"/></pattern>
+            <pattern id="pat-roof-h" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 2.5h5" stroke="#6d6255" stroke-width="1.2" opacity=".55"/></pattern>
+            <pattern id="pat-pave" width="12" height="6" patternUnits="userSpaceOnUse"><path d="M0 0h12M0 6h12M6 0v6M0 3h0" stroke="#c9bba2" stroke-width=".7"/></pattern>
+            <pattern id="pat-stair" width="10" height="3" patternUnits="userSpaceOnUse"><path d="M0 1.5h10" stroke="#6d6255" stroke-width="1"/></pattern>
+          </defs>
+          <!-- 后院占位 -->
+          <g class="pl pl--ghost" data-comp="Z" tabindex="0" role="button" aria-label="后院（占位）">
+            <rect x="-58" y="113" width="116" height="96" rx="2"/>
+            <text x="0" y="166" class="pl__t">后院（形制待考）</text>
+          </g>
+          <path class="pl__route" d="M60 49V162H6"/>
+          <!-- 前院 -->
+          <rect x="-54" y="-52" width="108" height="104" fill="url(#pat-pave)" class="pl__court"/>
+          <text x="0" y="4" class="pl__court-t">前 院</text>
+          <g class="pl" data-comp="A" tabindex="0" role="button" aria-label="A 主房"><rect x="-56" y="44" width="113" height="57" fill="url(#pat-roof)"/><path class="pl__front" d="M-50 44h101"/></g>
+          <g class="pl" data-comp="B" tabindex="0" role="button" aria-label="B 东厢房"><rect x="46" y="-43" width="54" height="85" fill="url(#pat-roof-h)"/><path class="pl__front" d="M46 -38v76"/></g>
+          <g class="pl" data-comp="C" tabindex="0" role="button" aria-label="C 西厢房"><rect x="-100" y="-42" width="54" height="85" fill="url(#pat-roof-h)"/><path class="pl__front" d="M-46 -38v76"/></g>
+          <g class="pl" data-comp="D" tabindex="0" role="button" aria-label="D 砖券窑房"><rect x="-56" y="-94" width="111" height="46" class="pl__flat"/><path class="pl__arches" d="M-38 -48a6 6 0 0 1 12 0M-6 -48a7 7 0 0 1 14 0M27 -48a6 6 0 0 1 12 0"/><path class="pl__parapet" d="M-56 -50h111"/></g>
+          <g class="pl" data-comp="E" tabindex="0" role="button" aria-label="E 四角券门">
+            <rect x="51" y="-53" width="19" height="7"/><rect x="-70" y="-53" width="19" height="7"/><rect x="51" y="42" width="19" height="7"/><rect x="-70" y="42" width="19" height="7"/>
+          </g>
+          <g class="pl" data-comp="F" tabindex="0" role="button" aria-label="F 门楼"><rect x="85" y="-86" width="26" height="24" fill="url(#pat-roof)"/><path class="pl__front" d="M111 -80v12"/><rect x="59" y="-93" width="26" height="38" class="pl__yard"/></g>
+          <g class="pl pl--hyp" data-comp="F2" aria-hidden="true"><rect x="113" y="-109" width="36" height="70" fill="url(#pat-stair)"/><text x="131" y="-28" class="pl__small">街（高差推定）</text></g>
+          <g class="pl" data-comp="G" tabindex="0" role="button" aria-label="G 砖雕影壁"><rect x="57" y="-89" width="9" height="30" class="pl__solid"/></g>
+          <g class="pl pl--hyp" data-comp="H" tabindex="0" role="button" aria-label="H 登顶石阶（推定）"><rect x="-66" y="-94" width="10" height="42" fill="url(#pat-stair)"/></g>
+          <g class="pl pl--hyp" data-comp="I" tabindex="0" role="button" aria-label="I 夹道房（推定）"><rect x="58" y="-129" width="50" height="37" fill="url(#pat-roof-h)"/></g>
+          <!-- 标号 -->
+          <g class="pl__tags" aria-hidden="true">
+            <g transform="translate(0 74)"><circle r="9"/><text y="3.6">A</text></g>
+            <g transform="translate(73 0)"><circle r="9"/><text y="3.6">B</text></g>
+            <g transform="translate(-73 0)"><circle r="9"/><text y="3.6">C</text></g>
+            <g transform="translate(0 -72)"><circle r="9"/><text y="3.6">D</text></g>
+            <g transform="translate(77 -40)"><circle r="7.5"/><text y="3.2">E</text></g>
+            <g transform="translate(98 -100)"><circle r="7.5"/><text y="3.2">F</text></g>
+            <g transform="translate(46 -74)"><circle r="7.5"/><text y="3.2">G</text></g>
+            <g transform="translate(-79 -74)"><circle r="7.5"/><text y="3.2">H</text></g>
+            <g transform="translate(83 -138)"><circle r="7.5"/><text y="3.2">I</text></g>
+          </g>
+          <g class="pl__north" transform="translate(-100 -128)"><path d="M0 -12L6 6L0 2L-6 6Z"/><text y="20">北</text></g>
+          <text x="-118" y="222" class="pl__small">示意：依据研究模型 v3 坐标绘制；无实测比例，方位为暂定</text>
+        </svg>
+      </figure>
+      <div class="plan__panel reveal" aria-live="polite">
+        <p class="plan__tag" data-plan-tag>A</p>
+        <h3 data-plan-title>主房 · 长排花格</h3>
+        <p class="plan__conf" data-plan-conf>原照可见形制 · 尺寸未实测</p>
+        <p data-plan-desc>三开间、四根主柱；两端开门，中间为连续的窗槛墙。上槛九组花格，有八角格、折线回纹与中央星形；梁端雕兽形承托，柱下石础层层回转。</p>
+        <p class="plan__photos" data-plan-photos></p>
+        <div class="plan__acts">
+          <button class="btn btn--ink btn--sm" type="button" data-plan-3d>在三维中查看</button>
+          <button class="btn btn--line btn--sm" type="button" data-plan-plate>看盛景图</button>
+        </div>
+        <ol class="plan__list" data-plan-list></ol>
+      </div>
+    </div>
+
+    <div class="carve">
+      <div class="carve__intro reveal">
+        <h3 class="h3-line">看懂砖雕</h3>
+        <p>《保德名胜》记载，欣院砖雕的题材有暗八仙、琴、棋、书、画；刀法上有镂空雕、高浮雕、浅浮雕。同一院中，汉族与蒙古族两种审美并存。</p>
+      </div>
+      <ul class="carve__tech">
+        <li class="reveal">
+          <svg viewBox="0 0 160 70" aria-hidden="true"><rect x="8" y="38" width="144" height="22" class="slab"/><path d="M8 38c14-5 22-5 34 0s22 5 34 0 22-5 34 0 22 5 34 0" class="relief"/></svg>
+          <h4>浅浮雕</h4><p>花纹微微隆起于砖面，线条细密，宜作边饰与底纹。</p>
+        </li>
+        <li class="reveal">
+          <svg viewBox="0 0 160 70" aria-hidden="true"><rect x="8" y="44" width="144" height="16" class="slab"/><path d="M8 44c6-22 30-30 42-8 6-24 34-28 44-4 8-22 36-24 50 12" class="relief"/></svg>
+          <h4>高浮雕</h4><p>形象凸起过半，层次深、光影强，适合主题纹样。</p>
+        </li>
+        <li class="reveal">
+          <svg viewBox="0 0 160 70" aria-hidden="true"><path d="M8 32h30v28H8zM56 32h48v28H56zM122 32h30v28h-30z" class="slab"/><path d="M38 40c6-10 12-10 18 0M104 40c6-10 12-10 18 0" class="relief"/><path d="M47 18v52M113 18v52" class="light"/></svg>
+          <h4>镂空雕</h4><p>雕透砖体，前后通透，花墙与女儿墙的十字镂空即属此类。</p>
+        </li>
+      </ul>
+      <div class="motifs">
+        <div class="motifs__col reveal">
+          <h4><span>中原</span>汉族传统题材</h4>
+          <p class="motifs__sub">暗八仙：以八仙所持法器代指八仙</p>
+          <ul class="motifs__grid">
+            <li><svg><use href="#m-shan"/></svg><b>扇</b><i>汉钟离</i></li>
+            <li><svg><use href="#m-jian"/></svg><b>剑</b><i>吕洞宾</i></li>
+            <li><svg><use href="#m-hulu"/></svg><b>葫芦</b><i>铁拐李</i></li>
+            <li><svg><use href="#m-paiban"/></svg><b>拍板</b><i>曹国舅</i></li>
+            <li><svg><use href="#m-hualan"/></svg><b>花篮</b><i>蓝采和</i></li>
+            <li><svg><use href="#m-yugu"/></svg><b>渔鼓</b><i>张果老</i></li>
+            <li><svg><use href="#m-di"/></svg><b>笛</b><i>韩湘子</i></li>
+            <li><svg><use href="#m-hehua"/></svg><b>荷花</b><i>何仙姑</i></li>
+          </ul>
+          <p class="motifs__sub">琴棋书画：文人雅趣</p>
+          <ul class="motifs__grid motifs__grid--4">
+            <li><svg><use href="#m-qin"/></svg><b>琴</b></li>
+            <li><svg><use href="#m-qi"/></svg><b>棋</b></li>
+            <li><svg><use href="#m-shu"/></svg><b>书</b></li>
+            <li><svg><use href="#m-hua"/></svg><b>画</b></li>
+          </ul>
+        </div>
+        <div class="motifs__x reveal" aria-hidden="true">×</div>
+        <div class="motifs__col motifs__col--steppe reveal">
+          <h4><span>大漠</span>蒙古族常见纹样</h4>
+          <p class="motifs__sub">草原上的吉祥图案，常见于毡帐、马具与服饰</p>
+          <ul class="motifs__grid motifs__grid--4">
+            <li><svg><use href="#m-jiwen"/></svg><b>犄纹</b><i>盘羊角</i></li>
+            <li><svg><use href="#m-panchang"/></svg><b>盘长</b><i>绵延不断</i></li>
+            <li><svg><use href="#m-hamur"/></svg><b>哈木尔纹</b><i>鼻纹</i></li>
+            <li><svg><use href="#m-yunwen"/></svg><b>云纹</b><i>祥云</i></li>
+          </ul>
+          <p class="motifs__note">以上为两种传统中的常见纹样类型，帮助读者辨识风格；欣院砖雕的具体题材请以实物与原照为准。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 肆 云游 ============ -->
+<section class="sec sec--night sec--yunyou" id="yunyou">
+  <div class="wrap">
+    <header class="sec-head sec-head--light reveal">
+      <span class="sec-no">肆</span>
+      <p class="kicker">云游 · 3D TOUR</p>
+      <h2>三维院落，随心漫步</h2>
+      <p class="lede">载入依据现状原照建立的可编辑三维模型（约40万面）。点选标签走近细看，切换晨、午、暮、夜，或开启“推定标示”查看哪些构件尚无照片直接依据。</p>
+    </header>
+  </div>
+  <div class="stage" id="stage3d" data-state="idle">
+    <canvas class="stage__canvas" aria-label="康家滩欣院三维模型，可拖动旋转"></canvas>
+    <div class="stage__poster">
+      <img src="assets/img/renders/overview-dawn-sm.jpg" srcset="assets/img/renders/overview-dawn-sm.jpg 720w, assets/img/renders/overview-dawn.jpg 1600w" sizes="100vw" alt="三维模型晨光全景渲染" loading="lazy">
+      <div class="stage__poster-in">
+        <p>三维模型约 2.1 MB</p>
+        <button class="btn btn--gold" type="button" data-act="load">进入三维院落</button>
+      </div>
+    </div>
+    <div class="stage__loading" aria-live="polite"><div class="stage__ring"></div><p>正在搭建院落 <span data-progress>0%</span></p></div>
+    <div class="stage__labels"></div>
+    <div class="stage__top">
+      <div class="stage__views" role="toolbar" aria-label="导览视点" data-views></div>
+    </div>
+    <div class="stage__bottom">
+      <div class="seg" role="group" aria-label="时辰" data-times>
+        <button type="button" data-time="dawn" aria-pressed="true">晨</button><button type="button" data-time="noon">午</button><button type="button" data-time="dusk">暮</button><button type="button" data-time="night">夜</button>
+      </div>
+      <div class="stage__tools">
+        <button type="button" class="tool" data-act="hyp" aria-pressed="false" title="以橙色标示推定构件">推定标示</button>
+        <button type="button" class="tool" data-act="tour" aria-pressed="false" title="自动导览">导览</button>
+        <button type="button" class="tool" data-act="reset" title="回到全景">全景</button>
+        <button type="button" class="tool" data-act="fs" title="全屏">全屏</button>
+      </div>
+    </div>
+    <aside class="stage__card" data-card hidden>
+      <button class="stage__card-x" type="button" data-act="close" aria-label="关闭">×</button>
+      <p class="stage__card-tag" data-card-tag></p>
+      <h3 data-card-title></h3>
+      <p class="stage__card-conf" data-card-conf></p>
+      <p data-card-desc></p>
+      <p class="stage__card-ph" data-card-photos></p>
+      <div class="stage__card-acts" data-card-acts></div>
+    </aside>
+    <p class="stage__hint">拖动旋转 · 滚轮或双指缩放 · 右键或双指平移</p>
+    <div class="stage__fallback" hidden><p>当前浏览器无法启用 WebGL。可先查看研究模型平面与盛景图。</p><img src="assets/img/model-v3-plan.jpg" alt="研究模型平面预览" loading="lazy"></div>
+  </div>
+  <div class="wrap">
+    <ul class="stills">
+      <li class="reveal"><button class="zoom" type="button" data-lightbox-src="assets/img/renders/A-night.jpg" data-lightbox-cap="三维模型渲染 · 夜 · 主房花格立面，窗纸透出暖光"><img src="assets/img/renders/A-night-sm.jpg" alt="三维渲染：夜色中的主房" loading="lazy" width="720" height="405"></button><span>夜 · 主房</span></li>
+      <li class="reveal"><button class="zoom" type="button" data-lightbox-src="assets/img/renders/D-noon.jpg" data-lightbox-cap="三维模型渲染 · 午 · 北房砖券窑洞与十字镂空女儿墙"><img src="assets/img/renders/D-noon-sm.jpg" alt="三维渲染：正午的砖券窑房" loading="lazy" width="720" height="405"></button><span>午 · 砖券窑房</span></li>
+      <li class="reveal"><button class="zoom" type="button" data-lightbox-src="assets/img/renders/G-night.jpg" data-lightbox-cap="三维模型渲染 · 夜 · 砖雕影壁中龛"><img src="assets/img/renders/G-night-sm.jpg" alt="三维渲染：夜色中的砖雕影壁" loading="lazy" width="720" height="405"></button><span>夜 · 影壁</span></li>
+      <li class="reveal"><button class="zoom" type="button" data-lightbox-src="assets/img/renders/overview-night.jpg" data-lightbox-cap="三维模型渲染 · 夜 · 院落鸟瞰"><img src="assets/img/renders/overview-night-sm.jpg" alt="三维渲染：夜色鸟瞰" loading="lazy" width="720" height="405"></button><span>夜 · 鸟瞰</span></li>
+    </ul>
+    <p class="note note--light reveal">模型来源：康家滩宅院建筑细节复原研究第三版（jin-courtyard-v3）。三维网格为真实可编辑构件，纹饰为类型化近似，不是摄影测量或测绘成果；方位依现场说明牌暂定，后院以虚体占位。网页版经结构精简与网格量化压缩（约9.5MB→2.1MB），构件分组与来源照片编号保持不变。</p>
+  </div>
+</section>
+
+<!-- ============ 伍 盛景 ============ -->
+<section class="sec sec--paper" id="shengjing">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-no">伍</span>
+      <p class="kicker">盛景 · RESTORATION PLATES</p>
+      <h2>九组盛景，重现完好之时</h2>
+      <p class="lede">依据现状原照，推定院落“维护完好”时的样子。每组图版都附上对照原照，并分别列出“本图呈现”与“仍需核实”——盛景图是视觉推定，考据以原照为准。</p>
+    </header>
+    <div class="plates" data-plates>
+      <div class="plates__tabs" role="tablist" aria-label="九组盛景图版" data-plate-tabs></div>
+      <div class="plates__panel" role="tabpanel" data-plate-panel></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 陆 家训 ============ -->
+<section class="sec sec--brick" id="jiaxun">
+  <div class="wrap">
+    <header class="sec-head sec-head--light reveal">
+      <span class="sec-no">陆</span>
+      <p class="kicker">家训 · FAMILY MAXIMS</p>
+      <h2>照壁与门额上的处世之道</h2>
+    </header>
+    <div class="maxim">
+      <div class="couplet reveal" aria-label="照壁砖雕对联">
+        <p class="couplet__col" lang="zh-Hant">治家要术不外勤而俭</p>
+        <figure class="couplet__mid">
+          <button class="zoom" type="button" data-lightbox-src="assets/img/restored-screen.jpg" data-lightbox-cap="砖雕影壁盛景推定：仿木檐、回纹圆形篆字纹、长尾鸟与卷草、中龛；侧柱可辨“處世良”（视觉推定，非实测）">
+            <img src="assets/img/restored-screen.jpg" alt="砖雕影壁盛景推定图" loading="lazy" width="900" height="1350">
+          </button>
+          <figcaption>影壁盛景推定</figcaption>
+        </figure>
+        <p class="couplet__col" lang="zh-Hant">处世良谋唯在谦而和</p>
+      </div>
+      <div class="maxim__text reveal">
+        <p class="maxim__lead">《保德名胜》记载，照壁上的砖雕对联“治家要术不外勤而俭，处世良谋唯在谦而和”，反映了院主人的处世哲学。</p>
+        <figure class="evidence">
+          <button class="zoom" type="button" data-lightbox-photo="391"><img src="assets/img/detail/chushi.jpg" alt="影壁侧柱竖排可辨“處世良”三字" loading="lazy" width="206" height="665"></button>
+          <figcaption>现存影壁侧柱上，仍可辨认竖排的“處世良”三字（原照391），与文献所记下联起首相合；其余字迹残损，未作补全。</figcaption>
+        </figure>
+        <ul class="four">
+          <li><b>勤</b><span>勤以立业</span></li>
+          <li><b>俭</b><span>俭以持家</span></li>
+          <li><b>谦</b><span>谦以处世</span></li>
+          <li><b>和</b><span>和以生财</span></li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="h3-line h3-line--light reveal">四配院的八字砖雕<small class="h3-sub">门额按旧制自右向左读</small></h3>
+    <ul class="plaques">
+      <li class="plaque reveal"><span class="plaque__face">務本</span><p>《论语·学而》：“君子务本，本立而道生。”致力根本，根本既立，道自然生。</p><figure><img src="assets/img/detail/plaque-wuben.jpg" alt="角门门额“務本”原照" loading="lazy" width="512" height="237"><figcaption>原照449：门额“務本”，右起读</figcaption></figure></li>
+      <li class="plaque reveal"><span class="plaque__face">樹德</span><p>《尚书·泰誓下》：“树德务滋。”培植德行，务求日益滋长。</p></li>
+      <li class="plaque reveal"><span class="plaque__face">為生</span><p>《大学》：“生财有大道……为之者疾，用之者舒，则财恒足矣。”勤勉治生，经营有道。</p><figure><img src="assets/img/detail/plaque-415.jpg" alt="另一处角门门额原照，释读待核" loading="lazy" width="512" height="239"><figcaption>原照415：另一处门额，释读待核（曾暂读“滋生”）</figcaption></figure></li>
+      <li class="plaque reveal"><span class="plaque__face">率真</span><p>坦率真诚，不事矫饰——晋商重信守诺，以诚待人。</p></li>
+    </ul>
+    <p class="note note--light reveal">《保德名胜》记为东、西、南、北四个配院的“树德”“为生”“率真”“务实”八字砖雕；张广明《许光达司令员在保德》作“务本，树德，为生，率真”。现场原照可见“務本”。</p>
+    <div class="mud reveal">
+      <span class="mud__k">泥封护宝</span>
+      <p>特殊年代里，村民用泥把院内的对联和砖雕包裹起来，使它们躲过了破坏，至今保存完好。一层黄泥，护住的是一座院子的家训，也是一方百姓对家园的珍重。<i>（据《保德名胜》）</i></p>
+    </div>
+  </div>
+</section>
+
+<div class="parapet parapet--paper" aria-hidden="true"><svg width="100%" height="34"><rect width="100%" height="34" fill="url(#pat-parapet)"/></svg></div>
+
+<!-- ============ 柒 古渡 ============ -->
+<section class="sec sec--paper" id="gudu">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-no">柒</span>
+      <p class="kicker">古渡 · THE YELLOW RIVER</p>
+      <h2>黄河古渡：方志里的康家滩</h2>
+      <p class="lede">早在清代方志中，康家滩就已留下名字。地名、港泊、山崩与一次帝王渡河，勾勒出这座黄河岸边村庄的往昔——它们是村庄的历史，也是认识欣院所处环境的背景。</p>
+    </header>
+    <div class="gudu">
+      <article class="gudu__card gudu__card--img reveal">
+        <button class="zoom gudu__scan" type="button" data-lightbox-src="assets/img/fangzhi-kangjiatan-gangbo.jpg" data-lightbox-cap="《保德州乡土志》民国五年石印本，地理科第三章“水”第八、九节（Wikimedia Commons 所收国家图书馆来源扫描，公共领域）">
+          <img src="assets/img/fangzhi-kangjiatan-gangbo.jpg" alt="《保德州乡土志》书影：康家滩一带佳港船筏停泊" loading="lazy" width="1600" height="1233">
+        </button>
+        <div class="gudu__body">
+          <p class="gudu__src">《保德州乡土志》· 民国五年（1916）石印本</p>
+          <h3>船筏停泊的佳港</h3>
+          <p class="gudu__orig">自康家灘而東關而馬家灘均有佳港船筏停泊</p>
+          <p>从康家滩到东关、马家滩，沿岸都是可停船筏的好港湾。同节还记康家滩附近有腰庄、石板沟的山水汇入黄河。</p>
+        </div>
+      </article>
+      <article class="gudu__card gudu__card--img reveal">
+        <button class="zoom gudu__scan" type="button" data-lightbox-src="assets/img/fangzhi-kangxi-dujiang.jpg" data-lightbox-cap="《保德州乡土志》民国五年石印本，地理科第一章境地第七节“圣泽”（Wikimedia Commons 所收国家图书馆来源扫描，公共领域）">
+          <img src="assets/img/fangzhi-kangxi-dujiang.jpg" alt="《保德州乡土志》书影：康熙由南门至康家滩渡河" loading="lazy" width="1600" height="1234">
+        </button>
+        <div class="gudu__body">
+          <p class="gudu__src">《保德州乡土志》· 圣泽</p>
+          <h3>康熙经康家滩渡河</h3>
+          <p class="gudu__orig">三月初一日啓鑾由南門至康家灘渡河結營府谷</p>
+          <p>康熙三十六年（1697）农历三月初一，康熙帝离开保德州城，出南门至康家滩渡过黄河，在府谷扎营。方志记的是渡河地点，并未说他驻跸欣院；据《保德名胜》，欣院建于清代中期，晚于此次渡河。</p>
+        </div>
+      </article>
+      <article class="gudu__card reveal">
+        <p class="gudu__src">清《保德州志》· 都里 / 山川</p>
+        <h3>旧志里的地名</h3>
+        <p>“都里”部分把康家塔、康家滩列入宣化坊；“山川”部分亦单列康家滩，位于旧州城东侧。各条目里数记作三里、五里不等，这里不折算成现代距离。</p>
+      </article>
+      <article class="gudu__card reveal">
+        <p class="gudu__src">《府谷县志》· 祥异</p>
+        <h3>隔河相望的记录</h3>
+        <p>对岸府谷的县志记载：康熙三十五年腊月二十七日，保德康家滩山崩，至三十六年正月初二方止。一条大河，两岸方志互相印证。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 捌 烽火 ============ -->
+<section class="sec sec--red" id="fenghuo">
+  <div class="wrap">
+    <header class="sec-head sec-head--light reveal">
+      <span class="sec-no sec-no--light">捌</span>
+      <p class="kicker">烽火 · 1941—1945</p>
+      <h2>烽火岁月：窑院里的司令部</h2>
+    </header>
+    <div class="war">
+      <div class="war__text reveal">
+        <p>1941年，八路军一二〇师二旅兼晋绥军区第二军分区由河曲迁驻保德，司令部设在康家滩。1942年春，许光达从延安经兴县来到保德，任二分区司令员兼独立二旅旅长。张广明《许光达司令员在保德》记述，二分区司令部“就设在康家滩村姓康的财主院内（俗称欣院）”，彭绍辉、许光达先后在正窑办公。</p>
+        <p>二分区当时分管神池、五寨、岢岚、河曲、保德、偏关六县，是晋绥军区至关重要的前哨阵地。隔河相望的府谷，长期驻扎着国民党军第二十二军八十六师二五八团。</p>
+      </div>
+      <ul class="war__nums reveal">
+        <li><b>6</b><span>县：二分区分管神池、五寨、岢岚、河曲、保德、偏关</span></li>
+        <li><b>1942</b><span>许光达到任二分区司令员兼独立二旅旅长</span></li>
+        <li><b>1943</b><span>大众剧社迁往康家滩</span></li>
+      </ul>
+    </div>
+    <article class="story reveal">
+      <p class="story__k">一河两岸</p>
+      <h3>黄河岸边的统一战线</h3>
+      <div class="story__cols">
+        <p>河西国民党军二五八团团长高致国，是许光达统战工作的主要对象。“只要他高致国是父母所生，是炎黄子孙，我就不信他没一点血性，没有一点骨气！”许光达派员过河，晓以民族大义。</p>
+        <p>不久，高致国突然邀许光达过河赴宴。众人劝阻，许光达说：“即使是‘鸿门宴’我也要闯一回！”席间，一句“中国人不打中国人”，打动了这位团长。</p>
+        <p>此后高致国回访保德，看了东关井然的抗日秩序，看了康家滩、郭家滩的民兵训练与大生产，还有夜间作战和地雷战演习，感叹：“许司令治军有方，卑职佩服。”</p>
+      </div>
+      <p class="story__src">据张广明《许光达司令员在保德》</p>
+    </article>
+    <ul class="war__cards">
+      <li class="reveal"><b>1943 · 剧社</b><p>晋绥二分区大众剧社迁往康家滩，1944年1月改名晋绥边区二中剧社，烽火中传出文艺之声。<i>据《忻州日报》2023年4月11日</i></p></li>
+      <li class="reveal"><b>劳动英雄</b><p>这里也是晋绥边区特等劳动模范、晋西北股份制办企业的创始人康三年奋斗过的地方。<i>据《保德名胜》</i></p></li>
+      <li class="reveal"><b>2008 · 影像</b><p>许光达大将诞辰100周年之际，中央电视台军事频道在此拍摄五集文献纪录片《许光达大将》。<i>据《保德名胜》</i></p></li>
+      <li class="reveal"><b>今日</b><p>欣院已辟为保德县青少年德育教育基地；2022年，一二〇师二旅司令部旧址列入忻州市第三批市级文物保护单位。</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 玖 年表 ============ -->
+<section class="sec sec--paper2" id="nianbiao">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-no">玖</span>
+      <p class="kicker">年表 · TIMELINE</p>
+      <h2>三百年间的康家滩与欣院</h2>
+      <p class="lede">村庄事件、院落登记与文献出版分开标注；方志记载的村事，不等同于欣院本身的经历。</p>
+    </header>
+    <ol class="tl">
+      <li class="tl__i reveal" data-kind="village"><time>清代</time><p>康家滩地名见于《保德州志》“都里”与“山川”。</p><i>村庄</i></li>
+      <li class="tl__i reveal" data-kind="village"><time>康熙三十五年腊月</time><p>《府谷县志》记保德康家滩山崩，至次年正月初二止。</p><i>村庄</i></li>
+      <li class="tl__i reveal" data-kind="village"><time>1697</time><p>康熙帝由保德州城南门至康家滩渡河，结营府谷。</p><i>村庄</i></li>
+      <li class="tl__i tl__i--key reveal" data-kind="yard"><time>清代中期</time><p>康氏走口外经营甘草发家，返乡修建欣院。</p><i>欣院 · 据《保德名胜》</i></li>
+      <li class="tl__i reveal" data-kind="doc"><time>1916</time><p>《保德州乡土志》石印刊行，记康家滩一带“均有佳港船筏停泊”。</p><i>文献</i></li>
+      <li class="tl__i tl__i--key reveal" data-kind="yard"><time>1941</time><p>一二〇师二旅兼晋绥军区第二军分区由河曲迁驻保德，司令部驻康家滩。</p><i>欣院 · 据说明牌</i></li>
+      <li class="tl__i reveal" data-kind="yard"><time>1942 春</time><p>许光达任二分区司令员兼独立二旅旅长，彭绍辉、许光达先后在正窑办公。</p><i>欣院 · 据张广明文</i></li>
+      <li class="tl__i reveal" data-kind="village"><time>1943—1944</time><p>大众剧社迁往康家滩；1944年1月改名晋绥边区二中剧社。</p><i>村庄</i></li>
+      <li class="tl__i reveal" data-kind="yard"><time>特殊年代</time><p>村民以泥包裹院内对联与砖雕，使之保存至今。</p><i>欣院 · 据《保德名胜》</i></li>
+      <li class="tl__i tl__i--key reveal" data-kind="yard"><time>2002.8</time><p>保德县人民政府公布为县级文物保护单位。</p><i>欣院 · 据说明牌</i></li>
+      <li class="tl__i reveal" data-kind="yard"><time>2008</time><p>中央电视台军事频道在此拍摄五集文献纪录片《许光达大将》。</p><i>欣院</i></li>
+      <li class="tl__i reveal" data-kind="doc"><time>2011</time><p>《保德名胜》（保德文史丛书第七辑）出版，“晋商民居”章收录“康家滩欣院”。</p><i>文献</i></li>
+      <li class="tl__i tl__i--key reveal" data-kind="yard"><time>2022.5</time><p>一二〇师二旅司令部旧址列入忻州市第三批市级文物保护单位（第79项）；同年县政府工作报告提出开展旧址维修保护。</p><i>欣院 · 忻政函〔2022〕33号</i></li>
+      <li class="tl__i reveal" data-kind="doc"><time>2026</time><p>现状原照整理、九组盛景复原图版与三维研究模型（第三版）完成，本站上线。</p><i>研究</i></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 拾 档案 ============ -->
+<section class="sec sec--paper" id="dangan">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-no">拾</span>
+      <p class="kicker">档案 · PHOTO ARCHIVE</p>
+      <h2>原照档案：院子今天的样子</h2>
+      <p class="lede">现场拍摄的现状原照共 64 幅不重复内容，本页精选 39 幅，可按建筑部位筛选。原照是一切复原与考据的依据。</p>
+    </header>
+    <div class="filters" role="toolbar" aria-label="按部位筛选" data-filters></div>
+    <div class="archive" data-archive></div>
+  </div>
+</section>
+
+<!-- ============ 拾壹 参访 ============ -->
+<section class="sec sec--ink" id="canfang">
+  <div class="wrap">
+    <header class="sec-head sec-head--light reveal">
+      <span class="sec-no">拾壹</span>
+      <p class="kicker">参访 · VISIT</p>
+      <h2>到康家滩去</h2>
+    </header>
+    <div class="visit">
+      <dl class="visit__info reveal">
+        <div><dt>地址</dt><dd>山西省忻州市保德县东关镇康家滩村</dd></div>
+        <div><dt>位置</dt><dd>黄河东岸、旧保德州城东侧，与陕西府谷县隔河相望</dd></div>
+        <div><dt>身份</dt><dd>县级文物保护单位（2002）；一二〇师二旅司令部旧址，忻州市市级文物保护单位（2022）；保德县青少年德育教育基地</dd></div>
+        <div><dt>开放</dt><dd>开放时间、预约方式与可参观范围，请在出行前向当地文旅部门或管理使用方确认。</dd></div>
+        <div class="visit__links">
+          <a class="btn btn--gold btn--sm" href="https://uri.amap.com/search?keyword=%E4%BF%9D%E5%BE%B7%E5%8E%BF%E5%BA%B7%E5%AE%B6%E6%BB%A9%E6%9D%91" target="_blank" rel="noopener">高德地图搜索</a>
+          <a class="btn btn--ghost btn--sm" href="https://map.baidu.com/search/%E4%BF%9D%E5%BE%B7%E5%8E%BF%E5%BA%B7%E5%AE%B6%E6%BB%A9%E6%9D%91" target="_blank" rel="noopener">百度地图搜索</a>
+        </div>
+      </dl>
+      <ul class="tips">
+        <li class="reveal"><b>看砖雕</b><p>砖雕宜在侧光时观赏，浮雕层次最分明。先看影壁的花鸟卷草，再找角门上的“務本”。</p></li>
+        <li class="reveal"><b>读格局</b><p>门楼—影壁—角门—前院，依次走进一座晋西北四合院；留意北面砖券窑房的十字镂空女儿墙。</p></li>
+        <li class="reveal"><b>访黄河</b><p>到河岸走一走，想象乡土志里“佳港船筏停泊”的旧日渡口。</p></li>
+        <li class="reveal"><b>护文物</b><p>院落仍有残损，请遵从现场指引，勿攀爬、勿触摸砖雕与木构，勿进入警示区域。</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 拾贰 史料 ============ -->
+<section class="sec sec--paper2" id="shiliao">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-no">拾贰</span>
+      <p class="kicker">史料 · SOURCES</p>
+      <h2>让每一条记载保留出处</h2>
+    </header>
+    <div class="kinds">
+      <div class="kinds__i reveal"><b>原照</b><p>现场拍摄的现状照片，共80个文件、64幅不重复内容，经哈希核对完整保留。是一切判断的依据。</p></div>
+      <div class="kinds__i reveal"><b>盛景图</b><p>以图像生成工具按原照约束绘制的“维护完好状态”视觉推定，不是模型渲染；细小笔画、刀法与雕刻深度可能有偏差。</p></div>
+      <div class="kinds__i reveal"><b>三维模型</b><p>真实可编辑的构件网格，纹饰为类型化近似，未经测绘或摄影测量；面数多寡不代表复原准确度。</p></div>
+    </div>
+    <div class="sources reveal">
+      <details open>
+        <summary>本院直接资料</summary>
+        <ul>
+          <li><b>《保德名胜》</b>政协保德县委员会编，保德文史丛书第七辑，三晋出版社，2011年。“晋商民居”章“康家滩欣院”篇（书页第14—15页）；张广明《许光达司令员在保德》（书页第16—18页）。据书页扫描。<a href="https://meta.nlc.cn/v2/detail/UCS01004904735" target="_blank" rel="noopener">国家图书馆书目</a></li>
+          <li><b>现场文物说明牌</b>《一二〇师二旅司令部旧址简介》，保德县文物保护所立。记旧址座西向东、占地982平方米、南北两院同为四合院、2002年8月公布为县级文物保护单位（原照477）。</li>
+          <li><b>康家滩宅院建筑细节复原研究 · 第三版</b>原照80件（64幅不重复）、九组盛景图版、可编辑三维模型（GLB/OBJ）、图版与原照目录。本站三维与图版均出自此研究包。</li>
+        </ul>
+      </details>
+      <details>
+        <summary>官方名录与文件</summary>
+        <ul>
+          <li><b>中国文物保护单位名录 · 山西省旧版附件</b>原国家文物局网站，市、县级第4393项“康家滩民居”，清，古建筑，2002年8月。<a href="https://web.archive.org/web/20120501202356/http://www.sach.gov.cn/portals/0/second/wenwubhml/%E5%B1%B1%E8%A5%BF%E7%9C%811.rar" target="_blank" rel="noopener">存档</a></li>
+          <li><b>忻州市人民政府关于公布第三批市级文物保护单位的通知</b>忻政函〔2022〕33号，2022年5月11日，附件第79项“一二〇师二旅司令部旧址”，时代1941年，地址保德县东关镇康家滩村。<a href="https://zwgk.sxxz.gov.cn/xzsrmzf/wj/zfwj/qt_29140/202205/t20220513_3759686.shtml" target="_blank" rel="noopener">原文</a> · <a href="https://web.archive.org/web/20240308014438/https://zwgk.sxxz.gov.cn/xzsrmzf/wj/zfwj/qt_29140/202205/t20220513_3759686.shtml" target="_blank" rel="noopener">存档</a></li>
+          <li><b>保德县2002年文物文件</b>保政发〔2002〕72号（2002-08-23）、保文体发〔2002〕2号（2002-09-24），见《世行贷款山西燃气利用项目综合环境影响报告》（2013）印刷页24。<a href="https://documents1.worldbank.org/curated/en/252051468012022401/pdf/E42880V10REV0C00Box379875B00PUBLIC0.pdf" target="_blank" rel="noopener">报告</a></li>
+          <li><b>2022年保德县政府工作报告</b>年度工作安排提出开展一二〇师二旅司令部旧址维修保护工作（转载本）。<a href="https://gcs66.com/document_detail/35271.html" target="_blank" rel="noopener">转载</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>方志与古籍</summary>
+        <ul>
+          <li><b>《保德州乡土志》</b>民国五年（1916）石印本，地理科题光绪三十三年五月。第一章第七节“圣泽”（康熙渡河）；第三章“水”第八、九节（港泊）。<a href="https://commons.wikimedia.org/wiki/File:%E4%BF%9D%E5%BE%B7%E5%B7%9E%E9%84%89%E5%9C%9F%E5%BF%97_-_%E6%B0%91%E5%9C%8B%E4%BA%94%E5%B9%B4_(1916).pdf" target="_blank" rel="noopener">扫描本</a> · <a href="https://www.shidianguji.com/book/LG2BDZXTZ/chapter/1lxtnoqe1l3wp" target="_blank" rel="noopener">电子转写</a></li>
+          <li><b>清《保德州志》</b>卷一“都里”宣化坊、卷二“山川”康家滩条（电子转录）。<a href="https://higrid.net/show/ancient/116-12.html" target="_blank" rel="noopener">转录</a></li>
+          <li><b>《古今图书集成·职方典》所引《保德州志》</b>保德州山川条“康家滩”。<a href="https://www.shidianguji.com/book/GJTS06/chapter/1lpmiyiy0od23" target="_blank" rel="noopener">转写</a></li>
+          <li><b>《府谷县志》</b>卷四“祥异”：康熙三十五年腊月二十七日保德康家滩山崩。<a href="https://www.shidianguji.com/mid-page/7528161888456720435" target="_blank" rel="noopener">转写</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>报刊与研究</summary>
+        <ul>
+          <li><b>《120师二旅司令部旧址》</b>《忻州日报》，2025年7月4日。<a href="https://www.xzrbw.com/info/2156/416213.htm" target="_blank" rel="noopener">原文</a></li>
+          <li><b>三木《晋绥边区二中剧社》</b>《忻州日报·文化旅游周刊》，2023年4月11日。<a href="https://www.xzrbw.com/info/2163/330630.htm" target="_blank" rel="noopener">原文</a></li>
+          <li><b>陈秉荣《保德东关的变迁》</b>区域史补充阅读（东关的渡运与商业）。<a href="https://www.xinzhou.tv/index.php?c=show&amp;id=130" target="_blank" rel="noopener">转载</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>仍待考证的问题</summary>
+        <ul class="open-q">
+          <li>欣院确切的始建年份、院主人家世与商号：尚待契约、家谱、碑记等直接材料。</li>
+          <li>另一处角门门额（原照415）的释读，以及影壁对联的完整原刻。</li>
+          <li>南北两院中另一院（研究模型中的“后院”）的形制、尺度与通路。</li>
+          <li>《保德名胜》所记“两院东西宽100米、南北长200米、总面积20000平方米”与现场说明牌“占地982平方米”差距悬殊，本站采用说明牌数据，有待实测核定。</li>
+        </ul>
+      </details>
+    </div>
+    <div class="call reveal">
+      <div>
+        <h3>史料征集</h3>
+        <p>欢迎提供与欣院有关的老照片、房地契约、账簿、题记照片、修缮记录与亲历回忆。请一并说明来源、是否原件及可公开范围。</p>
+      </div>
+      <a class="btn btn--ink" href="https://github.com/psknlr/3D-KJT/issues" target="_blank" rel="noopener">提交线索</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand"><svg aria-hidden="true"><use href="#seal"/></svg><div><b>康家滩欣院</b><span>保德院落史料与黄河村史</span></div></div>
+    <p>山西省忻州市保德县东关镇康家滩村 · 县级文物保护单位（2002） · 一二〇师二旅司令部旧址（市级，2022）</p>
+    <p class="foot__small">盛景图与三维模型为依据原照的推定复原，不作为建筑年代、原貌或测绘依据。方志书影来自 Wikimedia Commons 所收国家图书馆来源扫描（公共领域）。three.js 依 MIT 许可使用。</p>
+  </div>
+</footer>
+
+<div class="lb" data-lb hidden role="dialog" aria-modal="true" aria-label="图片查看">
+  <button class="lb__x" type="button" data-lb-close aria-label="关闭">×</button>
+  <button class="lb__nav lb__nav--prev" type="button" data-lb-prev aria-label="上一张">‹</button>
+  <figure class="lb__fig"><img data-lb-img alt=""><figcaption data-lb-cap></figcaption></figure>
+  <button class="lb__nav lb__nav--next" type="button" data-lb-next aria-label="下一张">›</button>
+</div>
+
+<script src="assets/data/archive.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
